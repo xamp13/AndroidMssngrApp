@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_background_app"
+    tools:context=".LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="16dp"
+        android:layout_margin="@dimen/margin_20_dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/msg_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Здесь могла быть ваша реклама"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/grey"
+            android:textSize="20sp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/email"
+            android:background="@drawable/edittext_bg"
+            android:inputType="textEmailAddress"
+            android:layout_marginTop="150dp"
+            android:hint="Логин (Email)"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/user_name"
+            android:background="@drawable/edittext_bg"
+            android:inputType="textEmailAddress"
+            android:layout_marginTop="20dp"
+            android:hint="Имя"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/user_surname"
+            android:background="@drawable/edittext_bg"
+            android:inputType="textEmailAddress"
+            android:layout_marginTop="20dp"
+            android:hint="Фамилия"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/password"
+            android:background="@drawable/edittext_bg"
+            android:inputType="textPassword"
+            android:layout_marginTop="20dp"
+            android:hint="Пароль"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/password_confirm"
+            android:background="@drawable/edittext_bg"
+            android:inputType="textPassword"
+            android:layout_marginTop="20dp"
+            android:hint="Пароль ещё раз"/>
+
+        <Button
+            android:id="@+id/btn_continue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/button_bg"
+            android:drawablePadding="40dp"
+            android:paddingLeft="@dimen/padding_20_dp"
+            android:paddingRight="@dimen/padding_20_dp"
+            android:text="Далее"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+</RelativeLayout>
