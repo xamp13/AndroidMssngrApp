@@ -1,2 +1,3 @@
+include ':AndroidModels'
 include ':app'
 rootProject.name = "AndroidMssngrApp"
