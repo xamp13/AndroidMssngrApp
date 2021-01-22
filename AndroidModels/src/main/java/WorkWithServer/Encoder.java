@@ -36,18 +36,19 @@ public class Encoder {
         return res;
     }
 
-    public String Decryption(byte[] message) throws NoSuchPaddingException, NoSuchAlgorithmException, InvalidKeyException, BadPaddingException, IllegalBlockSizeException {
+    public String Decryption(byte[] message) throws NoSuchPaddingException, NoSuchAlgorithmException, InvalidKeyException, BadPaddingException, IllegalBlockSizeException, InvalidAlgorithmParameterException {
         Cipher cipher = Cipher.getInstance("AES");
         byte[] ivParameterSpec =  new byte[16];
         byte[] ms =  new byte[message.length-16];
         for(int i= 0;i<16;i++){
-            ivParameterSpec[i]=ivParameterSpec[i];
+            ivParameterSpec[i]=message[i];
         }
         for(int i= 16;i<message.length;i++){
-            ivParameterSpec[i]=ivParameterSpec[i];
+            ms[i]=message[i];
         }
+        IvParameterSpec  iv =  new IvParameterSpec(ivParameterSpec);
         Key key = new SecretKeySpec(_key, "AES");
-        cipher.init(Cipher.DECRYPT_MODE, key);
+        cipher.init(Cipher.DECRYPT_MODE, key,iv);
         return new String(cipher.doFinal(message));
     }
 }
