@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingsFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imageViewProfileImage"
+            android:layout_width="144dp"
+            android:layout_height="144dp"
+            android:layout_gravity="center"
+            android:baselineAligned="true"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_launcher"
+            app:civ_border_color="#FF000000"
+            app:civ_border_width="2dp" />
+
+        <TextView
+            android:id="@+id/set_user_profile_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="4dp"
+            android:padding="4dp"
+            android:text="Загрузить новое фото"
+            android:textAlignment="center"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/set_user_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:hint="Имя"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/set_user_surname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:hint="Фамилия"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/set_user_country"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:hint="Страна"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/set_user_city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:hint="Город"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/set_user_phone_num"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:hint="Номер телефона"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/set_user_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:hint="Почта"
+            android:textSize="18sp" />
+
+
+        <Button
+            android:id="@+id/buttonLogout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:text="Сменить аккаунт" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
