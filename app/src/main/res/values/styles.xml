@@ -14,13 +14,11 @@
     </style>
 
 
-    <style name="AppBottomSheetDialogTheme"
-        parent="Theme.Design.Light.BottomSheetDialog">
+    <style name="AppBottomSheetDialogTheme" parent="Theme.Design.Light.BottomSheetDialog">
         <item name="bottomSheetStyle">@style/AppModalStyle</item>
     </style>
 
-    <style name="AppModalStyle"
-        parent="Widget.Design.BottomSheet.Modal">
+    <style name="AppModalStyle" parent="Widget.Design.BottomSheet.Modal">
         <item name="android:background">@drawable/rounded_dialog</item>
 
     </style>
@@ -29,6 +27,7 @@
     <style name="MenuStyle" parent="Theme.AppCompat.Light">
         <item name="android:background">@android:color/white</item>
     </style>
+
     <style name="DimDisabled" parent="Theme.AppCompat.Dialog">
         <item name="android:backgroundDimEnabled">false</item>
         <item name="android:backgroundDimAmount">0</item>
